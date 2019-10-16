@@ -1,7 +1,6 @@
 {
   "name": "lab_tdd_painter_decorator",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha models/specs"
@@ -10,5 +9,14 @@
   "license": "ISC",
   "devDependencies": {
     "mocha": "^6.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonrodonnell/lab_tdd_painter_decorator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/simonrodonnell/lab_tdd_painter_decorator/issues"
+  },
+  "homepage": "https://github.com/simonrodonnell/lab_tdd_painter_decorator#readme",
+  "description": ""
 }

@@ -15,19 +15,21 @@ Decorator.prototype.totalPaint = function () {
 };
 
 Decorator.prototype.enoughPaint = function (room) {
-  let totalAmount = this.totalPaint
-  let roomArea = room.area
-
-  let enoughPaintBoolean;
-
+  let totalAmount = this.totalPaint(); // forgot the brackets to tell JavaScript that it's a function! :)
+  let roomArea = room.area;
+  
   if (totalAmount >= roomArea) {
-    enoughPaintBoolean = true;
+    return true;
   } else if (totalAmount < roomArea) {
-    enoughPaintBoolean = false;
+    return false;
   };
 
-  return enoughPaintBoolean;
+};
 
+Decorator.prototype.paintRoom = function (room) {
+  if (this.enoughPaint(room)) {
+    room.hasBeenPainted();
+  };
 };
 
 module.exports = Decorator;
